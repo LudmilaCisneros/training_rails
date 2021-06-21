@@ -1,0 +1,23 @@
+# This is the configuration used to check the rubocop source code.
+require: rubocop-rails
+Rails:
+  Enabled: true
+AllCops:
+  Exclude:
+    - spec/support/spec_helper.rb
+    - spec/rails_helper.rb
+    - app/helpers/devise_helper.rb
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 99
+HasAndBelongsToMany:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+    - app/admin/**/*
+Layout/EndOfLine:
+   Enabled: False

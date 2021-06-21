@@ -1,0 +1,14 @@
+Hi <%= @rent.user.first_name %>
+
+<%= @date_time %> A new rent has been added:
+From: <%= @rent.from %>
+To: <%= @rent.to %>
+
+.::book details::.
+Title: <%= @rent.book.title %>
+Genre: <%= @rent.book.genre %>
+Author: <%= @rent.book.author %>
+Publisher: <%= @rent.book.publisher %>
+Year: <%= @rent.book.year %>
+
+Thanks
